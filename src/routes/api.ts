@@ -10,9 +10,9 @@ router.get('/ping', apiController.ping);
 let pipefy: string = 'pipefy'; 
 
 // routers
-router.get(`/${pipefy}/pipes/:pipes/reports_v2/:reports_v2`, apiController.pipeReportExport);
+router.get(`/${pipefy}/pb/pipes/:pipes/reports_v2/:reports_v2`, apiController.pipeReportExport);
 
-router.post(`/${pipefy}/pipes/:pipes/reports_v2/:reports_v2`, apiController.createPipeReportExport);
+router.get(`/${pipefy}/pipes/:pipes/reports_v2/:reports_v2`, apiController.createPipeReportExport);
 
 router.get(`/${pipefy}/teste`, apiController.test)
 

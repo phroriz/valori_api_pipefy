@@ -9,7 +9,7 @@ export const ping = (req: Request, res: Response) => {
 export const pipeReportExport = async (req: Request, res: Response) => {
     let pipes =  req.params.pipes;
     let reports_v2 = req.params.reports_v2;
-
+  
     var pipefy  = await Pipefy.findOne({
         where: { 
             pipe: pipes,
